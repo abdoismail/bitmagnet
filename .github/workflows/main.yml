@@ -30,6 +30,4 @@ jobs:
 
       - name: Expose Bitmagnet Web UI
         run: |
-          ngrok http 3333 > ngrok.log &
-          sleep 5
-          curl -s http://127.0.0.1:4040/api/tunnels | jq
+          ngrok http 3333
